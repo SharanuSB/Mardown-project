@@ -51,11 +51,18 @@ npm install
 npm run dev
 ```
 
+
 Dependencies:
 - react
 - @tailwindcss/typography
 - tailwindcss
 - vite
+
+## Environment Variables
+Make sure to create a `.env` file in the frontend directory with the following:
+```
+VITE_API_URL=http://localhost:5000
+```
 
 ## Sample Markdown
 ```markdown
@@ -72,8 +79,3 @@ console.log('Hello World');
 \`\`\`
 ```
 
-## Environment Variables
-Make sure to create a `.env` file in the frontend directory with the following:
-```
-VITE_API_URL=http://localhost:5000
-```
