@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MarkdownInput from './components/Editor/MarkdownInput';
 import PreviewPane from './components/Preview/PreviewPane';
 import Features from './components/Features/Features';
+import Toast from './components/Toast/Toast';
 import useMarkdownConversion from './hooks/useMarkdownConversion';
 
 const App = () => {
@@ -10,6 +11,8 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <Toast />
+
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex justify-between items-center">
@@ -56,6 +59,5 @@ const App = () => {
     </div>
   );
 };
-
 
 export default App;
